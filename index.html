@@ -1,23 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-<meta charset="UTF-8" />
-<title>Rutinim – Site</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rutinim – Resmi Site</title>
+  <meta name="description" content="Rutinim: Alışkanlık Takibi. Hedef koy, ilerle, başar! Basit, güvenli ve şeffaf." />
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; color:#111; }
+    header, main, footer { max-width: 900px; margin: auto; }
+    a { color: #0a7cff; text-decoration: none }
+    nav a { margin-right: 12px; }
+    .hero { background: linear-gradient(180deg,#f6f9ff,#ffffff); border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; }
+    footer { color:#666; font-size: 13px; margin-top: 40px; }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Rutinim</h1>
-  <p>Helpful links</p>
-</header>
-<main>
-  <ul>
-    <li><a href="privacy/en.html">Privacy Policy (EN)</a></li>
-    <li><a href="privacy/tr.html">Gizlilik Politikası (TR)</a></li>
-    <li><a href="support/en.html">Support (EN)</a></li>
-    <li><a href="support/tr.html">Destek (TR)</a></li>
-  </ul>
-</main>
+  <header>
+    <nav>
+      <a href="./index.html"><strong>Rutinim</strong></a>
+      <a href="./support.html">Destek / Support</a>
+      <a href="./privacy/index.html">Gizlilik / Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Rutinim – Alışkanlık Takibi</h1>
+      <p>Hedef koy, ilerle, başar! Alışkanlıklarını planla, hatırlatmalarla destek al, ilerlemeni analiz et.</p>
+      <p><em>Bilgilendirme notu:</em> Bu sitedeki içerik bilgilendirme amaçlıdır; uygulamanın son sürüm davranışı değişiklik gösterebilir.</p>
+    </section>
+
+    <section>
+      <h2>Öne Çıkanlar</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Basit ve Hızlı</h3>
+          <p>Alışkanlık ekle, planlı günleri ayarla, tek dokunuşla ilerlemeni işaretle.</p>
+        </div>
+        <div class="card">
+          <h3>Hatırlatmalar</h3>
+          <p>Planlı günlerde bildirim al. (Cihaz içi/yerel bildirim; sunucu yok.)</p>
+        </div>
+        <div class="card">
+          <h3>Analiz ve Rozetler</h3>
+          <p>7/30 günlük trendler ve başarı rozetleri ile motivasyonunu koru.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reklam ve Bölgesel Bilgi</h2>
+      <p>Uygulamada reklam gösterimleri <strong>genel olarak mümkün</strong> olmakla birlikte, şu anda Türkiye sürümünde planlanmaktadır.
+         Reklamlar üçüncü taraf sağlayıcılarca sunulabilir. Detaylar için <a href="./privacy/index.html">Gizlilik / Privacy</a> sayfasını inceleyin.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Rutinim. Tüm hakları saklıdır.</p>
+    <p><small>Bu site ve içerikleri bilgilendirme amaçlıdır. “Olduğu gibi” sunulur; herhangi bir garanti verilmez.</small></p>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
